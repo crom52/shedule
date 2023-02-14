@@ -1,16 +1,10 @@
 package com.srping.jpa.schedule;
 
-import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Collectors;
 import static java.util.stream.Collectors.toList;
-import java.util.stream.StreamSupport;
 import static java.util.stream.StreamSupport.stream;
-import javax.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.internal.IteratorImpl;
 import org.springframework.stereotype.Component;
-import org.springframework.util.CollectionUtils;
 import static org.springframework.util.CollectionUtils.isEmpty;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
