@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  main:
+    allow-bean-definition-overriding: true
+
+  datasource:
+        url: jdbc:mysql://localhost:3306/test?useSSL=false
+        username: root
+        password:
+#    url: jdbc:mysql://bdf05b57e98b9c:29ed01c9@us-cdbr-east-06.cleardb.net/heroku_92c50516db68778?reconnect=true&useSSL=false&createDatabaseIfNotExist=true
+#    username: bdf05b57e98b9c #heroku
+#    password: 29ed01c9
+#    database: heroku_92c50516db68778
+  data:
+      mongodb:
+        user: root
+        password: 0000
+        uri: mongodb+srv://root:0000@cluster0.1ztwiat.mongodb.net/?retryWrites=true&w=majority
+        database: schedule
+server:
+  port: 8081
