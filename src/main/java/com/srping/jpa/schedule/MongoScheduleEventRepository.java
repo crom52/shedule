@@ -4,5 +4,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MongoBillRepository extends MongoRepository<ScheduleEvent, String> {
+public interface MongoScheduleEventRepository extends MongoRepository<ScheduleEvent, String> {
 }

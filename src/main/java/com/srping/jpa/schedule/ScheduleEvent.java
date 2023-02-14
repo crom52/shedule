@@ -18,7 +18,7 @@ import lombok.Setter;
 public class ScheduleEvent {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  Long id;
+  String id;
   String title;
   Instant start;
   Instant end;
