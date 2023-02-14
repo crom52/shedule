@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/schedule")
 @Component
 @RequiredArgsConstructor
 class ScheduleEventController {
@@ -22,5 +22,4 @@ class ScheduleEventController {
   public ScheduleEvent createScheduleEvent(@RequestBody ScheduleEvent event) {
     return mongoBillRepository.insert(event);
   }
-
 }
